@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function hola () {
+		var sexo = document.getElementById("sexo").value;
+		console.log(sexo);
+			switch(sexo){
+				case "mujer":
+					alert("Soy Angela");
+					console.log(sexo);
+					break; 
+					// <!-- break sirve para romper el código para que no se siga ejecutando una y otra vez-->
+				case "hombre":
+					alert("Soy Miguel");
+					console.log(sexo);
+					break; 
+				case "bestia":
+					alert("Soy una bestia");
+					console.log(sexo);
+					break; 
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<select id="sexo">
+			<option value="hombre">hombre</option>
+			<option value="mujer">mujer</option>
+			<option value="bestia">bestia</option>
+		</select>
+		<button onclick="hola()">enviar</button>
+	</form>
+</body>
+</html>
